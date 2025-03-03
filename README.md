@@ -1,12 +1,28 @@
-# React + Vite
+# Analog Clock with React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple analog clock built using React. It dynamically updates the time every second and displays the hour, minute, and second hands rotating according to the current time. The clock face also shows the numbers from 1 to 12 around the clock, simulating a real analog clock.
 
-Currently, two official plugins are available:
+## Features
+Real-time clock with hour, minute, and second hands.
+Numbers (12, 1, 2, ..., 11) are displayed around the clock face.
+Clock hands rotate smoothly every second.
+Built with React using useState and useEffect hooks.
+## Explanation
+### Clock Component
+The Clock component uses the useState and useEffect hooks:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    useState stores the current time.
+    useEffect sets up a setInterval that updates the time every second.
+    The clock hands (hour, minute, second) are rendered with the correct rotation based on the current time.
+## Technologies Used
 
-## Expanding the ESLint configuration
+React.js
+JavaScript (ES6)
+CSS
+## Future Enhancements
+Add more styling to improve the look and feel.
+Make the clock more responsive for different screen sizes.
+Implement features like changing clock colors or adding a date display.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## License
+This project is open-source and available under the MIT License.
